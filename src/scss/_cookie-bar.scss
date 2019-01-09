@@ -1,11 +1,11 @@
 #cookie-bar{
-	background: $darkest-grey;
+	background: $dark-grey;
 }
 #cookie-bar .cb-enable {
     background: $brand-primary;
 
     &:hover, &:active, &:focus{
-        background: $brand-secondary;
+        background: $brand-primary--dark;
     }
 }
 #cookie-bar .cb-policy {
