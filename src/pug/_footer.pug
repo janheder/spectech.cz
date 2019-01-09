@@ -1,0 +1,50 @@
+footer
+
+    section.footer-main(id="anchor-footer")
+        .container.footer-main__container
+            .row
+                .col-12.col-sm-6.col-md-6.col-lg-6.col-xl-6
+                    h1.footer-main__title Napište nám
+                    form(action="" method="")
+                        .form-group
+                            label.footer-main__label(for="form_name") Jméno a příjmení
+                            input.form-control.footer-main__input(type="text" id="form_name" aria-describedby="name")
+                        .form-group
+                            label.footer-main__label(for="form_mail") Email
+                            input.form-control.footer-main__input(type="email" id="form_mail" aria-describedby="email")
+                        .form-group
+                            label.footer-main__label(for="form_text") Text zprávy
+                            textarea.form-control(id="form_text" aria-describedby="text" rows="5")
+                        .form-group
+                            label.footer-main__label(for="form_spam") Kontrolní otázka (tři + dva)
+                            input.form-control.footer-main__input(type="number" id="form_spam" aria-describedby="antispam")
+
+                        p.footer-main__form-text Odesláním formuláře souhlasíte s #[a(href="#") podmínkami ochrany osobních údajů]
+
+                        button.btn.footer-main__btn(type="submit") Odeslat zprávu
+
+                .col-12.col-sm-1.col-md-1.col-lg-1.col-xl-1
+
+                .col-12.col-sm-5.col-md-5.col-lg-5.col-xl-5
+                    h5.footer-main__h5 Kontakty
+                    h4.footer-main__contact +420 595 536 301
+                    br
+                    h4.footer-main__contact info@spectech.cz
+                    
+                    .footer-main__address
+                        h5.footer-main__h5 Adresa
+                        p.footer-main__text Speciální technologie, s.r.o.
+                        p.footer-main__text U Staré elektrárny 1881/4
+                        p.footer-main__text 710 00 Ostrava - Slezská Ostrava
+        
+                    a.btn.-white(href="#") Všechny kontakty
+                    
+                    img.footer__img(src=URLbase+"img/bg-footer.svg" alt="Speciální technologie, s.r.o." title="Speciální technologie, s.r.o.")
+
+
+section.copyright
+    .container.copyright__container
+        .copyright__wrap
+            h5.copyright__h5 Copyright © 2018 #[a.copyright__link(href=metaURL) #{metaSitename}]
+            h5.copyright__h5.copyright__pull Vytvořeno v #[a.copyright__link(href="#") eline.cz]
+        

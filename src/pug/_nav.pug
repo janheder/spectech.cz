@@ -1,0 +1,34 @@
+header
+	nav.navbar.navbar-expand-lg.navbar-main
+	
+		a.navbar-brand(href="/")
+			img.navbar-brand__img(src=URLbase+"images/logo.svg" title=metaSitename alt=metaSitename)
+
+		.navbar-toggler(aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-toggle="collapse" data-target="#navbarNav" role="button")
+			span.hamburger-icon.navbar-toggler__icon
+			p.navbar-toggler__text Menu	
+
+		.collapse.navbar-collapse.navbar__collapse(id="navbarNav")
+			ul.navbar-nav
+				li.nav-item.navbar-nav__item
+					a.nav-link.navbar-nav__link(href="") O společnosti
+				li.nav-item.navbar-nav__item
+					a.nav-link.navbar-nav__link(href="") Střediska
+				li.nav-item.navbar-nav__item
+					a.nav-link.navbar-nav__link(href="") Certifikáty
+				li.nav-item.navbar-nav__item
+					a.nav-link.navbar-nav__link(href="") Reference
+				li.nav-item.navbar-nav__item
+					a.nav-link.navbar-nav__link(href="") Aktuality
+				li.nav-item.navbar-nav__item
+					a.nav-link.navbar-nav__link(href="") Kontakty	
+
+			.dropdown.show.navbar__dropdown
+				a.btn.-light(href="#" role="button" id="language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") CZ
+				.dropdown-menu(aria-labelledby="language")
+					a.dropdown-item(href="#") CZ
+					a.dropdown-item(href="#") SK
+
+			a.btn(href="") Kontaktní formulář
+			
+	span(id="dark-overlay" aria-label="Toggle navigation" data-target="#navbarNav" data-toggle="collapse")

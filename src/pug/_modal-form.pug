@@ -1,0 +1,237 @@
+.modal.fade(id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form-heading" aria-hidden="true")
+    .modal-dialog(role="document")
+        .modal-content
+
+            .modal-header
+                h5.modal-title(id="modal-form-heading") Let's talk business
+                button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                    span.cross-icon.white
+
+
+            
+            .modal-body
+
+                ul.nav.nav-tabs.modal-tabs__nav(role="tablist")
+                    p.modal-tabs__text Select language:
+                    li.nav-item.modal-tabs__tab
+                        a.nav-link.modal-tabs__tab-link.active(data-toggle="tab" href="#lang-1" role="tab") 
+                            img(src="img/us-flag.svg" alt="Change language to English" title="Change language to English")
+                    li.nav-item.modal-tabs__tab
+                        a.nav-link.modal-tabs__tab-link(data-toggle="tab" href="#lang-2" role="tab") 
+                            img(src="img/cz-flag.svg" alt="Přepnout formulář do češtiny" title="Přepnout formulář do češtiny")
+
+                .modal-success(style="display: none;")
+                    h2 Email was send
+
+                .tab-content.modal-tabs__wrap
+                    .tab-pane.modal-tabs__tab-wrap.active(id="lang-1" role="tabpanel" aria-expanded="true")
+
+                        form(action="send-email.php" method="post" id="form-us" accept-charset="UTF-8")
+                            .form-section
+                                h4.form-section__title Personal info
+                                .row
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="text" name="i_name" id="i_name" placeholder=" " required autocomplete="name")
+                                                label.form-group__label(for="i_name") Full name
+                                                span.form-group__error Please enter your Full name
+
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="date" name="i_date" id="i_date" placeholder=" " required autocomplete="bday")
+                                                label.form-group__label(for="i_date") Birth date
+                                                span.form-group__error Please enter your Birth date
+
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="email" name="id_email" id="id_email" placeholder=" " required autocomplete="email")
+                                                label.form-group__label(for="id_email") Email address
+                                                span.form-group__error Please enter valid Email address
+
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="tel" name="i_phone" id="i_phone" placeholder=" " required autocomplete="tel")
+                                                label.form-group__label(for="i_phone") Phone number
+                                                span.form-group__error Please enter valid Phone number
+
+
+                            .form-section
+                                h4.form-section__title Contact address
+                                .row
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="text" name="i_street-address" id="i_street-address" placeholder=" " required autocomplete="street-address")
+                                                label.form-group__label(for="i_street-address") Address
+                                                span.form-group__error Please enter your Address
+
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="text" name="i_street-address-2" id="i_street-address-2" placeholder=" " autocomplete="street-address-2")
+                                                label.form-group__label(for="i_street-address-2") Address 2 (optional)
+                                                span.form-group__error Please enter your Address 2
+
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="text" name="i_locality" id="i_locality" placeholder=" " required autocomplete="address-level2")
+                                                label.form-group__label(for="i_locality") City
+                                                span.form-group__error Please enter your City
+
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="text" name="i_region" id="i_region" placeholder=" " required autocomplete="address-level1")
+                                                label.form-group__label(for="i_region") State / Province / Region
+                                                span.form-group__error Please enter your State / Province / Region
+
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="text" name="i_postal-code" id="i_postal-code" placeholder=" " required autocomplete="postal-code")
+                                                label.form-group__label(for="i_postal-code") ZIP Code
+                                                span.form-group__error Please enter your ZIP Code
+
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="text" name="i_country" id="i_country" placeholder=" " required autocomplete="country-name")
+                                                label.form-group__label(for="i_country") Country
+                                                span.form-group__error Please enter your Country
+
+
+                            .form-section
+                                h4.form-section__title Additional informations
+                                .row
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="text" name="i_investment" id="i_investment" placeholder=" " required autocomplete="investment")
+                                                label.form-group__label(for="i_investment") Approximate investment 
+                                                span.form-group__error Please enter your Approximate investment 
+
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-check
+                                                label.form-check__label
+                                                    input.form-check__input(type="checkbox" name="i_policy" id="i_policy" required)
+                                                    span.form-check__inline I have read and agree to the #[a.form-check__link(href="privacy-policy" target="_blank") Privacy Policy]
+                                                    span.form-check__box.checkbox
+
+                            .modal-footer
+                                button.btn(type="submit" name="submit") Send message #[span.btn__icon.arrow-icon.white]
+                
+                
+                
+                
+               
+                    .tab-pane.user-detail__tab-wrap(id="lang-2" role="tabpanel" aria-expanded="false")
+
+
+                        form(action="send-email.php" method="post" id="form-cz" accept-charset="UTF-8")
+                            .form-section
+                                h4.form-section__title Osobní údaje
+                                .row
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="text" name="i_name" id="i_name_cz" placeholder=" " required autocomplete="name")
+                                                label.form-group__label(for="i_name") Jméno a příjmení
+                                                span.form-group__error Prosím vyplňte Jméno a příjmení
+
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="date" name="i_date" id="i_date_cz" placeholder=" " required autocomplete="bday")
+                                                label.form-group__label(for="i_date") Datum narození
+                                                span.form-group__error Prosím vyplňte Datum narození
+
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="email" name="id_email" id="id_email_cz" placeholder=" " required autocomplete="email")
+                                                label.form-group__label(for="id_email") Email
+                                                span.form-group__error Prosím vyplňte Email
+
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="tel" name="i_phone" id="i_phone_cz" placeholder=" " required autocomplete="tel")
+                                                label.form-group__label(for="i_phone") Telefonní číslo
+                                                span.form-group__error Prosím vyplňte Telefonní číslo
+
+
+                            .form-section
+                                h4.form-section__title Kontaktní adresa
+                                .row
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="text" name="i_street-address" id="i_street-address_cz" placeholder=" " required autocomplete="street-address")
+                                                label.form-group__label(for="i_street-address") Adresa
+                                                span.form-group__error Prosím vyplňte Adresu
+
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="text" name="i_street-address-2" id="i_street-address-2_cz" placeholder=" " autocomplete="street-address-2")
+                                                label.form-group__label(for="i_street-address-2") Adresa 2 (nepovinné)
+                                                span.form-group__error Prosím vyplňte Adresu 2
+
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="text" name="i_locality" id="i_locality_cz" placeholder=" " required autocomplete="address-level2")
+                                                label.form-group__label(for="i_locality") Město
+                                                span.form-group__error Prosím vyplňte Město
+
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="text" name="i_region" id="i_region_cz" placeholder=" " required autocomplete="address-level1")
+                                                label.form-group__label(for="i_region") Region
+                                                span.form-group__error Prosím vyplňte Region
+
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="text" name="i_postal-code" id="i_postal-code_cz" placeholder=" " required autocomplete="postal-code")
+                                                label.form-group__label(for="i_postal-code") PSČ
+                                                span.form-group__error Prosím vyplňte PSČ
+
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="text" name="i_country" id="i_country_cz" placeholder=" " required autocomplete="country-name")
+                                                label.form-group__label(for="i_country") Země
+                                                span.form-group__error Prosím vyplňte Zemi
+
+
+                            .form-section
+                                h4.form-section__title Další informace
+                                .row
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-group__wrap
+                                                input.form-control.form-group__input(type="text" name="i_investment" id="i_investment_cz" placeholder=" " required autocomplete="investment")
+                                                label.form-group__label(for="i_investment") Předpokládaná investice 
+                                                span.form-group__error Prosím vyplňte Předpokládanou investici
+
+                                    .col-12.col-md-6
+                                        .form-group
+                                            .form-check
+                                                label.form-check__label
+                                                    input.form-check__input(type="checkbox" name="i_policy" id="i_policy_cz" required)
+                                                    span.form-check__inline Přečetli jsem si a souhlasím se #[a.form-check__link(href="privacy-policy" target="_blank") Zpracováním osobních údajů]
+                                                    span.form-check__box.checkbox
+
+                            .modal-footer
+                                button.btn(type="submit" name="submit") Odeslat formulář #[span.btn__icon.arrow-icon.white]
+
+
+

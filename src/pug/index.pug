@@ -1,0 +1,128 @@
+doctype html
+include _variables.pug  
+html(lang=lang)
+    head
+        meta(charset="utf-8")
+        meta(content="IE=edge" http-equiv="X-UA-Compatible")
+        meta(content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport")
+        title #{title}
+        meta(content="index,follow,snippet,archive" name="robots")
+        meta(content=metaDescription name="description")
+        meta(content=metaKeywords lang="cs" name="keywords")
+        meta(content=metaAuthor name="author")
+
+        link(rel="canonical" href=metaURL)
+        meta(property="og:locale" content="cs_CZ")
+        meta(property="og:type" content="website")
+        meta(property="og:title" content=title)
+        meta(property="og:description" content=metaDescription)
+        meta(property="og:url" content=metaURL)
+        meta(property="og:site_name" content=metaSitename)
+        meta(name="twitter:card" content="summary")
+        meta(name="twitter:site" content=metaTwitterName)
+        meta(name="twitter:title" content=title)
+        meta(name="twitter:description" content=metaDescription)
+        meta(name="twitter:image" content=metaTwitterImg)
+        include _css-include.pug  
+    body
+        include _nav.pug
+        section.hero(id="anchor-hero")
+            .hero__bg-symbols
+            .container.hero__container
+                img.hero__title(src=URLbase+"img/hero-title.svg" title="Smart way" alt="mart way")
+                p.hero__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit
+                .hero__buttons
+                    a.btn.-dark(href="#") Více informací #[span.arrow-icon.white.btn__icon]
+                    a.btn.-white(href="#") Kontakty
+
+
+        section.introduction
+            .container
+                .introduction__wrap
+                    .introduction__textBox
+                        h1.introduction__title Společnost speciální technologie s.r.o
+                        p.introduction__text Společnost byla založena v roce 2002 a od svého založení sídlí v Ostravě - od února 2011 ve vlastních prostorách na ulici U Staré elektrárny 1881/4.
+                        .introduction__btn
+                            a(href="#").btn.-ghost.-dark O nás #[span.arrow-icon.btn__icon]
+                    .introduction__imgBox
+                        .introduction__imgWrap.post__image-container
+                            img.introduction__img.post__featured-image(src=URLbase+"img/bg-intro.jpg" alt="Společnost speciální technologie s.r.o" title="Společnost speciální technologie s.r.o")
+
+        section.centers
+            .container
+                h1.centers__title Střediska
+                .row
+                    .col-12.col-sm-6.col-md-6.col-lg-6.col-xl-6
+                        a.centers-single.post__image-container(href="#")
+                            .centers-single__content
+                                h3.centers-single__title Středisko technologií
+                                p.centers-single__text Středisko technologií realizuje dodávky a montáže jak komplexních technologických celků, tak jejich dílčích částí...
+                                .btn.-transparent.centers-single__link Více informací #[span.arrow-icon.white.btn__icon]
+                            img.centers-single__img.post__featured-image(src=URLbase+"img/thumb-centers1.jpg" alt="Středisko technologií" title="Středisko technologií")
+
+                    .col-12.col-sm-6.col-md-6.col-lg-6.col-xl-6
+                        a.centers-single.post__image-container(href="#")
+                            .centers-single__content
+                                h3.centers-single__title Středisko technologií
+                                p.centers-single__text Středisko technologií realizuje dodávky a montáže jak komplexních technologických celků, tak jejich dílčích částí...
+                                .btn.-transparent.centers-single__link Více informací #[span.arrow-icon.white.btn__icon]
+                            img.centers-single__img.post__featured-image(src=URLbase+"img/thumb-centers2.jpg" alt="Středisko technologií" title="Středisko technologií")
+
+
+        section.references
+            .container
+                h1.references__title Reference
+                .row
+
+                    .col-12.col-sm-6.col-md-6.col-lg-4.col-xl-4.references__col
+                        a.references-single(href="#")
+                            .references-single__img-wrap.post__image-container
+                                img.references-single__img.post__featured-image(src=URLbase+"img/thumb-references.jpg" alt="Úprava technologického procesu bělení MONDI Štětí" title="Úprava technologického procesu bělení MONDI Štětí")
+                            h5.references-single__title Úprava technologického procesu bělení MONDI Štětí
+                            p.references-single__date Realizace: 2015
+
+                    .col-12.col-sm-6.col-md-6.col-lg-4.col-xl-4.references__col
+                        a.references-single(href="#")
+                            .references-single__img-wrap.post__image-container
+                                img.references-single__img.post__featured-image(src=URLbase+"img/thumb-references.jpg" alt="Úprava technologického procesu bělení MONDI Štětí" title="Úprava technologického procesu bělení MONDI Štětí")
+                            h5.references-single__title Úprava technologického procesu bělení MONDI Štětí
+                            p.references-single__date Realizace: 2015
+
+                    .col-12.col-sm-6.col-md-6.col-lg-4.col-xl-4.references__col
+                        a.references-single(href="#")
+                            .references-single__img-wrap.post__image-container
+                                img.references-single__img.post__featured-image(src=URLbase+"img/thumb-references.jpg" alt="Úprava technologického procesu bělení MONDI Štětí" title="Úprava technologického procesu bělení MONDI Štětí")
+                            h5.references-single__title Úprava technologického procesu bělení MONDI Štětí
+                            p.references-single__date Realizace: 2015
+
+                .references__btn
+                    a.btn.-ghost.-dark(href="#") Všechny reference #[span.arrow-icon.btn__icon]
+
+
+        section.news
+            .container.news__container
+                h3.news__title Aktuality
+                .row
+
+                    .col-12.col-sm-6.col-md-6.col-lg-6.col-xl-6
+                        a.news-single(href="#")
+                            .news-single__img-wrap.post__image-container
+                                img.news-single__img.post__featured-image(src=URLbase+"img/thumb-news.jpg" alt="Lorem ipsum dolor sit amet" title="Lorem ipsum dolor sit amet")
+                            h5.news-single__title Lorem ipsum dolor sit amet
+                            p.news-single__date Datum: 2015
+
+                    .col-12.col-sm-6.col-md-6.col-lg-6.col-xl-6
+                        a.news-single(href="#")
+                            .news-single__img-wrap.post__image-container
+                                img.news-single__img.post__featured-image(src=URLbase+"img/thumb-news.jpg" alt="Lorem ipsum dolor sit amet" title="Lorem ipsum dolor sit amet")
+                            h5.news-single__title Lorem ipsum dolor sit amet
+                            p.news-single__date Datum: 2015
+
+                .news__btn
+                    a.btn.-ghost.-dark(href="#") Starší aktuality #[span.arrow-icon.btn__icon]
+
+        
+        include _footer.pug
+
+        include _js-include.pug
+        

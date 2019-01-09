@@ -1,0 +1,78 @@
+doctype html
+include _variables.pug  
+html(lang=lang)
+    head
+        meta(charset="utf-8")
+        meta(content="IE=edge" http-equiv="X-UA-Compatible")
+        meta(content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport")
+        title #{title}
+        meta(content="index,follow,snippet,archive" name="robots")
+        meta(content=metaDescription name="description")
+        meta(content=metaKeywords lang="cs" name="keywords")
+        meta(content=metaAuthor name="author")
+
+        link(rel="canonical" href=metaURL)
+        meta(property="og:locale" content="cs_CZ")
+        meta(property="og:type" content="website")
+        meta(property="og:title" content=title)
+        meta(property="og:description" content=metaDescription)
+        meta(property="og:url" content=metaURL)
+        meta(property="og:site_name" content=metaSitename)
+        meta(name="twitter:card" content="summary")
+        meta(name="twitter:site" content=metaTwitterName)
+        meta(name="twitter:title" content=title)
+        meta(name="twitter:description" content=metaDescription)
+        meta(name="twitter:image" content=metaTwitterImg)
+        include _css-include.pug  
+    body
+        include _nav.pug
+        section.heading
+            h1.heading__title Kontakty
+            .heading__symbols
+
+
+        main
+            .container
+                article
+                    .row
+                        .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6
+                            h4 Sídlo společnosti:
+                            strong Speciální technologie, s.r.o.
+                            p U Staré elektrárny 1881/4
+                            p 710 00 Ostrava - Slezská Ostrava
+                            br
+                            a(href="#") odkaz na server justice.cz
+                            br
+                            br
+                            p Telefon: +420 556 205 558
+                            p Fax:  +420 595 536 31
+
+                        .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6
+                            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.1988661453393!2d18.29588721603778!3d49.83872077939569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713e32dd5a52cab%3A0xe552a68be315719d!2sSpeci%C3%A1ln%C3%AD+technologie+s.r.o.!5e0!3m2!1scs!2scz!4v1547046905467" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen)
+                    br
+                    br
+                    .row
+                        .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6
+                            h4 Horní suchá:
+                            strong Speciální technologie, s.r.o.
+                            p Průmyslová 1415/5
+                            p 735 35 Horní Suchá
+                            br
+                            br
+                            strong Telefonní a faxové spojení:
+                            p Telefon: +420 595 536 300
+                            p Fax: +420 595 536 311
+                            br
+                            br
+                            strong Emailové spojení:
+                            p E-mail: info@spectech.cz
+                            p Servis a Flowrox: pumps@spectech.cz
+
+
+                        .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6
+                            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2574.947462263129!2d18.46953711603685!3d49.80585537939167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713ff1d7b1d8f95%3A0x3dc5a3af54073c8d!2sSpeci%C3%A1ln%C3%AD+technologie%2C+s.r.o.!5e0!3m2!1scs!2scz!4v1547046970659" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen)
+
+        include _footer.pug
+
+        include _js-include.pug
+        

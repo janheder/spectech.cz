@@ -1,0 +1,40 @@
+// Popper for Bootstrap support
+script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js")
+script.
+	if(typeof(Popper) === 'undefined') {
+	document.write('<script src="#{URLbase}js/popper.min.js">\x3C/script>')}
+
+// Bootstrap core JavaScript
+script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js")
+script.
+	if(typeof($.fn.modal) === 'undefined') {
+	document.write('<script src="#{URLbase}js/bootstrap.min.js">\x3C/script>')}
+
+// FontAwesome 5
+script(src="https://use.fontawesome.com/releases/v5.0.6/js/all.js" integrity="sha384-0AJY8UERsBUKdWcyF3o2kisLKeIo6G4Tbd8Y6fbyw6qYmn4WBuqcvxokp8m2UzSD" crossorigin="anonymous")
+script.
+	if(typeof(FontAwesome) === 'undefined') {
+	document.write('<script src="#{URLbase}js/fontawesome-all.min.js">\x3C/script>')}
+
+// Custom js plugins and scripts
+script(src=URLbase+"js/all.min.js")
+
+script.
+	$(function(){
+		$('#form-us').on('submit', function(e){
+			e.preventDefault();
+			$.ajax({
+				url: 'send-email.php', //this is the submit URL
+				type: 'POST',
+				data: $('#form-us').serialize(),
+				success: function(data){
+					// alert('Formulář byl úspěšně odeslán')
+					$(".tab-content.modal-tabs__wrap").slideToggle(200);
+					$(".modal-success").slideToggle(200);
+				},
+				error: function(data) { 
+					alert('Error')
+				}
+			});
+		});
+	});

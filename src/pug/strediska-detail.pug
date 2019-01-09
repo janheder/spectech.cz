@@ -1,0 +1,66 @@
+doctype html
+include _variables.pug  
+html(lang=lang)
+    head
+        meta(charset="utf-8")
+        meta(content="IE=edge" http-equiv="X-UA-Compatible")
+        meta(content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport")
+        title #{title}
+        meta(content="index,follow,snippet,archive" name="robots")
+        meta(content=metaDescription name="description")
+        meta(content=metaKeywords lang="cs" name="keywords")
+        meta(content=metaAuthor name="author")
+
+        link(rel="canonical" href=metaURL)
+        meta(property="og:locale" content="cs_CZ")
+        meta(property="og:type" content="website")
+        meta(property="og:title" content=title)
+        meta(property="og:description" content=metaDescription)
+        meta(property="og:url" content=metaURL)
+        meta(property="og:site_name" content=metaSitename)
+        meta(name="twitter:card" content="summary")
+        meta(name="twitter:site" content=metaTwitterName)
+        meta(name="twitter:title" content=title)
+        meta(name="twitter:description" content=metaDescription)
+        meta(name="twitter:image" content=metaTwitterImg)
+        include _css-include.pug  
+    body
+        include _nav.pug
+        section.heading
+            h1.heading__title Středisko techonologií
+            .heading__symbols
+
+
+        main
+            .container
+                article
+                    strong Středisko technologií realizuje dodávky a montáže jak komplexních technologických celků, tak jejich dílčích částí. Největší realizované projekty byly zejména pro zákazníky v oblasti energetiky při realizaci odsíření, v chemickém průmyslu, v papírnách a celulózkách.
+                    br
+                    .row
+                        .col-12.col-sm-6.col-md-4.col-lg-4.col-xl-4
+                            .references-img
+                                a(href=URLbase+"img/thumb-references.jpg" data-lightbox="image-1" data-title="My caption")
+                                    img(src=URLbase+"img/thumb-references.jpg" alt="" title="")
+                        .col-12.col-sm-6.col-md-4.col-lg-4.col-xl-4
+                            .references-img
+                                a(href=URLbase+"img/thumb-references.jpg" data-lightbox="image-1" data-title="My caption")
+                                    img(src=URLbase+"img/thumb-references.jpg" alt="" title="")
+                        .col-12.col-sm-6.col-md-4.col-lg-4.col-xl-4
+                            .references-img
+                                a(href=URLbase+"img/thumb-references.jpg" data-lightbox="image-1" data-title="My caption")
+                                    img(src=URLbase+"img/thumb-references.jpg" alt="" title="")
+                    br
+                    p Pracovníci střediska jsou připraveni řešit problémy zákazníka, od menších oprav a rekonstrukcí stávajícího zařízení, přes řešení dílčích částí technologie až po kompletní dodávky technologických celků na klíč. V případě realizace větších projektů je sestavován projektový tým, který je zodpovědný za projekt od fáze projekční až po konečné předání zákazníkovi. Postup projektu je po celou dobu sledován standardními metodami, které umožňují projektovému týmu a rovněž zákazníkovi permanentní přehled o stavu realizace projektu.
+                    
+                    br
+
+                    h4 Aktivity střediska technologií se soustřeďují zejména v následujících oblastech
+
+                    p Postupně se společnosti podařilo v tomto středisku úspěšně vybudovat tým odborníků, který je schopen realizovat dodávky a montáže potrubních systémů ze širokého spektra materiálů - ať už se jedná o nerezové a speciální oceli nebo lamináty a plasty. Pro práce s laminátovým potrubím a potrubím z plastů absolvovali pracovníci střediska zkoušky dle německých norem DVS 2212 a DVS 2220, což umožňuje účast na projektech odsíření realizovaných výhradně pro zahraniční odběratele.
+                    
+                    p Pracovníci střediska mají bohaté zkušenosti získané zejména účastí na projektech odsíření v České republice, Slovensku, Německu, Španělsku a Portugalsku a investičních projektech v rafinériích Slovnaft a Česká rafinérská. Většina těchto projektů byla realizována pro zahraniční investory a odběratele a naše společnost splnila vysoké požadavky na kvalitu a dodržování standardních procedur obvyklých při tomto typu projektů, kladené na dodavatele.
+        
+        include _footer.pug
+
+        include _js-include.pug
+        

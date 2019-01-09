@@ -1,0 +1,104 @@
+doctype html
+include _variables.pug  
+html(lang=lang)
+    head
+        meta(charset="utf-8")
+        meta(content="IE=edge" http-equiv="X-UA-Compatible")
+        meta(content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport")
+        title #{title}
+        meta(content="index,follow,snippet,archive" name="robots")
+        meta(content=metaDescription name="description")
+        meta(content=metaKeywords lang="cs" name="keywords")
+        meta(content=metaAuthor name="author")
+
+        link(rel="canonical" href=metaURL)
+        meta(property="og:locale" content="cs_CZ")
+        meta(property="og:type" content="website")
+        meta(property="og:title" content=title)
+        meta(property="og:description" content=metaDescription)
+        meta(property="og:url" content=metaURL)
+        meta(property="og:site_name" content=metaSitename)
+        meta(name="twitter:card" content="summary")
+        meta(name="twitter:site" content=metaTwitterName)
+        meta(name="twitter:title" content=title)
+        meta(name="twitter:description" content=metaDescription)
+        meta(name="twitter:image" content=metaTwitterImg)
+        include _css-include.pug  
+    body
+        include _nav.pug
+        section.heading
+            h1.heading__title Název reference
+            p.heading__text Datum realizace: 1. 1. 1970
+            .heading__symbols
+
+
+        main
+            .container
+                article
+                    h2 Popis
+                    p Dodávka a montáž sklolaminátového, plastového a nerezového potrubí pro úpravu technologického procesu bělení v části C215 Bělírna, I. Etapa - D0 věž.
+                    ul
+                        li Zákazník: MONDI Štětí, a.s.
+                        li Termín: 2015
+                        li Místo: MONDI Štětí
+
+                    br
+                    h2 Fotogalerie
+                    .row
+                        .col-12.col-sm-6.col-md-4.col-lg-4.col-xl-4
+                            .references-img
+                                a(href=URLbase+"img/thumb-references.jpg" data-lightbox="image-1" data-title="My caption")
+                                    img(src=URLbase+"img/thumb-references.jpg" alt="" title="")
+                        .col-12.col-sm-6.col-md-4.col-lg-4.col-xl-4
+                            .references-img
+                                a(href=URLbase+"img/thumb-references.jpg" data-lightbox="image-1" data-title="My caption")
+                                    img(src=URLbase+"img/thumb-references.jpg" alt="" title="")
+                        .col-12.col-sm-6.col-md-4.col-lg-4.col-xl-4
+                            .references-img
+                                a(href=URLbase+"img/thumb-references.jpg" data-lightbox="image-1" data-title="My caption")
+                                    img(src=URLbase+"img/thumb-references.jpg" alt="" title="")
+                        .col-12.col-sm-6.col-md-4.col-lg-4.col-xl-4
+                            .references-img
+                                a(href=URLbase+"img/thumb-references.jpg" data-lightbox="image-1" data-title="My caption")
+                                    img(src=URLbase+"img/thumb-references.jpg" alt="" title="")
+                        .col-12.col-sm-6.col-md-4.col-lg-4.col-xl-4
+                            .references-img
+                                a(href=URLbase+"img/thumb-references.jpg" data-lightbox="image-1" data-title="My caption")
+                                    img(src=URLbase+"img/thumb-references.jpg" alt="" title="")
+                        .col-12.col-sm-6.col-md-4.col-lg-4.col-xl-4
+                            .references-img
+                                a(href=URLbase+"img/thumb-references.jpg" data-lightbox="image-1" data-title="My caption")
+                                    img(src=URLbase+"img/thumb-references.jpg" alt="" title="")
+        section.references
+            .container
+                h1.references__title Další reference
+                .row
+
+                    .col-12.col-sm-6.col-md-6.col-lg-4.col-xl-4.references__col
+                        a.references-single(href="#")
+                            .references-single__img-wrap.post__image-container
+                                img.references-single__img.post__featured-image(src=URLbase+"img/thumb-references.jpg" alt="Úprava technologického procesu bělení MONDI Štětí" title="Úprava technologického procesu bělení MONDI Štětí")
+                            h5.references-single__title Úprava technologického procesu bělení MONDI Štětí
+                            p.references-single__date Realizace: 2015
+
+                    .col-12.col-sm-6.col-md-6.col-lg-4.col-xl-4.references__col
+                        a.references-single(href="#")
+                            .references-single__img-wrap.post__image-container
+                                img.references-single__img.post__featured-image(src=URLbase+"img/thumb-references.jpg" alt="Úprava technologického procesu bělení MONDI Štětí" title="Úprava technologického procesu bělení MONDI Štětí")
+                            h5.references-single__title Úprava technologického procesu bělení MONDI Štětí
+                            p.references-single__date Realizace: 2015
+
+                    .col-12.col-sm-6.col-md-6.col-lg-4.col-xl-4.references__col
+                        a.references-single(href="#")
+                            .references-single__img-wrap.post__image-container
+                                img.references-single__img.post__featured-image(src=URLbase+"img/thumb-references.jpg" alt="Úprava technologického procesu bělení MONDI Štětí" title="Úprava technologického procesu bělení MONDI Štětí")
+                            h5.references-single__title Úprava technologického procesu bělení MONDI Štětí
+                            p.references-single__date Realizace: 2015
+
+                .references__btn
+                    a.btn.-ghost.-dark(href="#") Všechny reference #[span.arrow-icon.btn__icon]
+
+        include _footer.pug
+
+        include _js-include.pug
+        

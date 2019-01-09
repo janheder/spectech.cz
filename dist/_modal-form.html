@@ -1,0 +1,261 @@
+
+<div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form-heading" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-form-heading">Let's talk business</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span class="cross-icon white"></span></button>
+      </div>
+      <div class="modal-body">
+        <ul class="nav nav-tabs modal-tabs__nav" role="tablist">
+          <p class="modal-tabs__text">Select language:</p>
+          <li class="nav-item modal-tabs__tab"><a class="nav-link modal-tabs__tab-link active" data-toggle="tab" href="#lang-1" role="tab"> <img src="img/us-flag.svg" alt="Change language to English" title="Change language to English"/></a></li>
+          <li class="nav-item modal-tabs__tab"><a class="nav-link modal-tabs__tab-link" data-toggle="tab" href="#lang-2" role="tab"> <img src="img/cz-flag.svg" alt="Přepnout formulář do češtiny" title="Přepnout formulář do češtiny"/></a></li>
+        </ul>
+        <div class="modal-success" style="display: none;">
+          <h2>Email was send</h2>
+        </div>
+        <div class="tab-content modal-tabs__wrap">
+          <div class="tab-pane modal-tabs__tab-wrap active" id="lang-1" role="tabpanel" aria-expanded="true">
+            <form action="send-email.php" method="post" id="form-us" accept-charset="UTF-8">
+              <div class="form-section">
+                <h4 class="form-section__title">Personal info</h4>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="text" name="i_name" id="i_name" placeholder=" " required="required" autocomplete="name"/>
+                        <label class="form-group__label" for="i_name">Full name</label><span class="form-group__error">Please enter your Full name</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="date" name="i_date" id="i_date" placeholder=" " required="required" autocomplete="bday"/>
+                        <label class="form-group__label" for="i_date">Birth date</label><span class="form-group__error">Please enter your Birth date</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="email" name="id_email" id="id_email" placeholder=" " required="required" autocomplete="email"/>
+                        <label class="form-group__label" for="id_email">Email address</label><span class="form-group__error">Please enter valid Email address</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="tel" name="i_phone" id="i_phone" placeholder=" " required="required" autocomplete="tel"/>
+                        <label class="form-group__label" for="i_phone">Phone number</label><span class="form-group__error">Please enter valid Phone number</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-section">
+                <h4 class="form-section__title">Contact address</h4>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="text" name="i_street-address" id="i_street-address" placeholder=" " required="required" autocomplete="street-address"/>
+                        <label class="form-group__label" for="i_street-address">Address</label><span class="form-group__error">Please enter your Address</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="text" name="i_street-address-2" id="i_street-address-2" placeholder=" " autocomplete="street-address-2"/>
+                        <label class="form-group__label" for="i_street-address-2">Address 2 (optional)</label><span class="form-group__error">Please enter your Address 2</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="text" name="i_locality" id="i_locality" placeholder=" " required="required" autocomplete="address-level2"/>
+                        <label class="form-group__label" for="i_locality">City</label><span class="form-group__error">Please enter your City</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="text" name="i_region" id="i_region" placeholder=" " required="required" autocomplete="address-level1"/>
+                        <label class="form-group__label" for="i_region">State / Province / Region</label><span class="form-group__error">Please enter your State / Province / Region</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="text" name="i_postal-code" id="i_postal-code" placeholder=" " required="required" autocomplete="postal-code"/>
+                        <label class="form-group__label" for="i_postal-code">ZIP Code</label><span class="form-group__error">Please enter your ZIP Code</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="text" name="i_country" id="i_country" placeholder=" " required="required" autocomplete="country-name"/>
+                        <label class="form-group__label" for="i_country">Country</label><span class="form-group__error">Please enter your Country</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-section">
+                <h4 class="form-section__title">Additional informations</h4>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="text" name="i_investment" id="i_investment" placeholder=" " required="required" autocomplete="investment"/>
+                        <label class="form-group__label" for="i_investment">Approximate investment </label><span class="form-group__error">Please enter your Approximate investment </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-check">
+                        <label class="form-check__label">
+                          <input class="form-check__input" type="checkbox" name="i_policy" id="i_policy" required="required"/><span class="form-check__inline">I have read and agree to the <a class="form-check__link" href="privacy-policy" target="_blank">Privacy Policy</a></span><span class="form-check__box checkbox"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn" type="submit" name="submit">Send message <span class="btn__icon arrow-icon white"></span></button>
+              </div>
+            </form>
+          </div>
+          <div class="tab-pane user-detail__tab-wrap" id="lang-2" role="tabpanel" aria-expanded="false">
+            <form action="send-email.php" method="post" id="form-cz" accept-charset="UTF-8">
+              <div class="form-section">
+                <h4 class="form-section__title">Osobní údaje</h4>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="text" name="i_name" id="i_name_cz" placeholder=" " required="required" autocomplete="name"/>
+                        <label class="form-group__label" for="i_name">Jméno a příjmení</label><span class="form-group__error">Prosím vyplňte Jméno a příjmení</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="date" name="i_date" id="i_date_cz" placeholder=" " required="required" autocomplete="bday"/>
+                        <label class="form-group__label" for="i_date">Datum narození</label><span class="form-group__error">Prosím vyplňte Datum narození</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="email" name="id_email" id="id_email_cz" placeholder=" " required="required" autocomplete="email"/>
+                        <label class="form-group__label" for="id_email">Email</label><span class="form-group__error">Prosím vyplňte Email</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="tel" name="i_phone" id="i_phone_cz" placeholder=" " required="required" autocomplete="tel"/>
+                        <label class="form-group__label" for="i_phone">Telefonní číslo</label><span class="form-group__error">Prosím vyplňte Telefonní číslo</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-section">
+                <h4 class="form-section__title">Kontaktní adresa</h4>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="text" name="i_street-address" id="i_street-address_cz" placeholder=" " required="required" autocomplete="street-address"/>
+                        <label class="form-group__label" for="i_street-address">Adresa</label><span class="form-group__error">Prosím vyplňte Adresu</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="text" name="i_street-address-2" id="i_street-address-2_cz" placeholder=" " autocomplete="street-address-2"/>
+                        <label class="form-group__label" for="i_street-address-2">Adresa 2 (nepovinné)</label><span class="form-group__error">Prosím vyplňte Adresu 2</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="text" name="i_locality" id="i_locality_cz" placeholder=" " required="required" autocomplete="address-level2"/>
+                        <label class="form-group__label" for="i_locality">Město</label><span class="form-group__error">Prosím vyplňte Město</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="text" name="i_region" id="i_region_cz" placeholder=" " required="required" autocomplete="address-level1"/>
+                        <label class="form-group__label" for="i_region">Region</label><span class="form-group__error">Prosím vyplňte Region</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="text" name="i_postal-code" id="i_postal-code_cz" placeholder=" " required="required" autocomplete="postal-code"/>
+                        <label class="form-group__label" for="i_postal-code">PSČ</label><span class="form-group__error">Prosím vyplňte PSČ</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="text" name="i_country" id="i_country_cz" placeholder=" " required="required" autocomplete="country-name"/>
+                        <label class="form-group__label" for="i_country">Země</label><span class="form-group__error">Prosím vyplňte Zemi</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-section">
+                <h4 class="form-section__title">Další informace</h4>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-group__wrap">
+                        <input class="form-control form-group__input" type="text" name="i_investment" id="i_investment_cz" placeholder=" " required="required" autocomplete="investment"/>
+                        <label class="form-group__label" for="i_investment">Předpokládaná investice </label><span class="form-group__error">Prosím vyplňte Předpokládanou investici</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <div class="form-check">
+                        <label class="form-check__label">
+                          <input class="form-check__input" type="checkbox" name="i_policy" id="i_policy_cz" required="required"/><span class="form-check__inline">Přečetli jsem si a souhlasím se <a class="form-check__link" href="privacy-policy" target="_blank">Zpracováním osobních údajů</a></span><span class="form-check__box checkbox"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn" type="submit" name="submit">Odeslat formulář <span class="btn__icon arrow-icon white"></span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

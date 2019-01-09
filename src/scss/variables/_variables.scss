@@ -1,0 +1,93 @@
+/* ========================================================================== */
+/* Descriptive Colors */
+/* ========================================================================== */
+
+$white: #FFFFFF;
+$light-grey: #F5F5F5;
+$medium-grey: #414141;
+$border-grey: #E5E5E5;
+
+$dark-grey: #3D4853;
+$darkest-grey: #39444E;
+$lighter-grey: #414D58;
+$text-grey: #5A5A5A;
+
+$black: #000000;
+$orange-main: #FA4C29;
+$orange-main-dark: #F92F06;
+$red-main: #DC2D36;
+$red-main-dark: #B00000;
+$brown: #43312E;
+$red: #E30016;
+$green-main: #0A9100;
+$yellow-main: #E9A400;
+$blue-main: #2161AD;
+$blue-main-dark: #1B4E8B;
+$blue-alt: #3996D2;
+$blue-alt-2: #219BAD;
+$purple-main: #6F76D9;
+$purple-main-light: #8C93EF;
+$gray-blue-light: #BCC8D4;
+
+$black-transparent: rgba(0,0,0,0.1);
+$black-transparent-25: rgba(0,0,0,0.25);
+$black-transparent-50: rgba(0,0,0,0.5);
+
+$white-transparent: rgba(255,255,255,0.1);
+
+
+/* ========================================================================== */
+/* Variables */
+/* ========================================================================== */
+
+// Border radius
+$border-radius-primary: 0px;
+$border-radius-round: 50%;
+
+// Border color
+$border-primary: $border-grey;
+$border-dark: $black;
+$border-white: $white;
+$border-red: $red-main;
+$border-blue: $blue-main;
+
+// Brand colors
+$brand-primary: $red-main;
+$brand-primary--dark: $red-main-dark;
+$brand-primary--light: $red-main-dark;
+$brand-secondary: $purple-main-light;
+
+// Text colors
+$text-primary: $black;
+$text-secondary: $text-grey;
+$text-light: $gray-blue-light;
+$text-white: $white;
+$text-red: $red-main;
+
+
+// Backgorund colors
+$bg-white: $white;
+$bg-light: $light-grey;
+$bg-medium: $medium-grey;
+$bg-grey: $border-grey;
+
+$bg-dark: $black;
+$bg-darker: $darkest-grey;
+$bg-lighter: $lighter-grey;
+
+$bg-black: $black;
+$bg-red: $red-main;
+$bg-green: $green-main;
+$bg-blue: $blue-main;
+$bg-blue-alt: $blue-alt;
+$bg-blue-alt-2: $blue-alt-2;
+$bg-blue-dark: $blue-main-dark;
+
+// Font family
+$font-family-main: "Barlow", sans-serif;
+$font-family-alt: "Barlow", sans-serif;
+$font-family-system: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+
+$font-family-primary: "Barlow", sans-serif;
+$font-family-secondary: "Barlow", sans-serif;
+$font-family-system: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;

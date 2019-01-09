@@ -1,0 +1,101 @@
+doctype html
+include _variables.pug  
+html(lang=lang)
+    head
+        meta(charset="utf-8")
+        meta(content="IE=edge" http-equiv="X-UA-Compatible")
+        meta(content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport")
+        title #{title}
+        meta(content="index,follow,snippet,archive" name="robots")
+        meta(content=metaDescription name="description")
+        meta(content=metaKeywords lang="cs" name="keywords")
+        meta(content=metaAuthor name="author")
+
+        link(rel="canonical" href=metaURL)
+        meta(property="og:locale" content="cs_CZ")
+        meta(property="og:type" content="website")
+        meta(property="og:title" content=title)
+        meta(property="og:description" content=metaDescription)
+        meta(property="og:url" content=metaURL)
+        meta(property="og:site_name" content=metaSitename)
+        meta(name="twitter:card" content="summary")
+        meta(name="twitter:site" content=metaTwitterName)
+        meta(name="twitter:title" content=title)
+        meta(name="twitter:description" content=metaDescription)
+        meta(name="twitter:image" content=metaTwitterImg)
+        include _css-include.pug  
+    body
+        include _nav.pug
+        section.heading
+            h1.heading__title Aktuality
+            .heading__symbols
+
+        main
+            .container
+                .row
+                    .col-12.col-sm-6.col-md-6.col-lg-6.col-xl-6
+                        a.news-single(href="#")
+                            .news-single__img-wrap.post__image-container
+                                img.news-single__img.post__featured-image(src=URLbase+"img/thumb-news.jpg" alt="Lorem ipsum dolor sit amet" title="Lorem ipsum dolor sit amet")
+                            h5.news-single__title Lorem ipsum dolor sit amet
+                            p.news-single__date Datum: 2015
+                    .col-12.col-sm-6.col-md-6.col-lg-6.col-xl-6
+                        a.news-single(href="#")
+                            .news-single__img-wrap.post__image-container
+                                img.news-single__img.post__featured-image(src=URLbase+"img/thumb-news.jpg" alt="Lorem ipsum dolor sit amet" title="Lorem ipsum dolor sit amet")
+                            h5.news-single__title Lorem ipsum dolor sit amet
+                            p.news-single__date Datum: 2015
+                    .col-12.col-sm-6.col-md-6.col-lg-6.col-xl-6
+                        a.news-single(href="#")
+                            .news-single__img-wrap.post__image-container
+                                img.news-single__img.post__featured-image(src=URLbase+"img/thumb-news.jpg" alt="Lorem ipsum dolor sit amet" title="Lorem ipsum dolor sit amet")
+                            h5.news-single__title Lorem ipsum dolor sit amet
+                            p.news-single__date Datum: 2015
+                    .col-12.col-sm-6.col-md-6.col-lg-6.col-xl-6
+                        a.news-single(href="#")
+                            .news-single__img-wrap.post__image-container
+                                img.news-single__img.post__featured-image(src=URLbase+"img/thumb-news.jpg" alt="Lorem ipsum dolor sit amet" title="Lorem ipsum dolor sit amet")
+                            h5.news-single__title Lorem ipsum dolor sit amet
+                            p.news-single__date Datum: 2015
+                    .col-12.col-sm-6.col-md-6.col-lg-6.col-xl-6
+                        a.news-single(href="#")
+                            .news-single__img-wrap.post__image-container
+                                img.news-single__img.post__featured-image(src=URLbase+"img/thumb-news.jpg" alt="Lorem ipsum dolor sit amet" title="Lorem ipsum dolor sit amet")
+                            h5.news-single__title Lorem ipsum dolor sit amet
+                            p.news-single__date Datum: 2015
+                    .col-12.col-sm-6.col-md-6.col-lg-6.col-xl-6
+                        a.news-single(href="#")
+                            .news-single__img-wrap.post__image-container
+                                img.news-single__img.post__featured-image(src=URLbase+"img/thumb-news.jpg" alt="Lorem ipsum dolor sit amet" title="Lorem ipsum dolor sit amet")
+                            h5.news-single__title Lorem ipsum dolor sit amet
+                            p.news-single__date Datum: 2015
+                    .col-12.col-sm-6.col-md-6.col-lg-6.col-xl-6
+                        a.news-single(href="#")
+                            .news-single__img-wrap.post__image-container
+                                img.news-single__img.post__featured-image(src=URLbase+"img/thumb-news.jpg" alt="Lorem ipsum dolor sit amet" title="Lorem ipsum dolor sit amet")
+                            h5.news-single__title Lorem ipsum dolor sit amet
+                            p.news-single__date Datum: 2015
+                    .col-12.col-sm-6.col-md-6.col-lg-6.col-xl-6
+                        a.news-single(href="#")
+                            .news-single__img-wrap.post__image-container
+                                img.news-single__img.post__featured-image(src=URLbase+"img/thumb-news.jpg" alt="Lorem ipsum dolor sit amet" title="Lorem ipsum dolor sit amet")
+                            h5.news-single__title Lorem ipsum dolor sit amet
+                            p.news-single__date Datum: 2015
+
+
+                nav
+                    ul.pagination
+                        li.page-item
+                            a.page-link(href="#") 1
+                        li.page-item.active
+                            span.page-link(href="#") 2
+                        li.page-item
+                            a.page-link(href="#") 3
+                        li.page-item
+                            a.page-link(href="#") 4
+
+
+        include _footer.pug
+
+        include _js-include.pug
+        
