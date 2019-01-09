@@ -1,5 +1,8 @@
 #cookie-bar{
-	background: $dark-grey;
+    background: $black;
+}
+#cookie-bar a {
+    border-radius: 0px;
 }
 #cookie-bar .cb-enable {
     background: $brand-primary;
