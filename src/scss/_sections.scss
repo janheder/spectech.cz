@@ -57,15 +57,15 @@
 
 @media screen and (max-width:991px){
     .hero {
-        padding: 10rem 0;
+        padding: 10rem 0 5rem 0;
     }
     .hero__title{
-        font-size: 3.6rem;
         margin: 0;
         margin-bottom: 2rem;
-        line-height: 1.2;
+        height: 30px;
     }
     .hero__text{
+        font-size: 2rem;
         margin: 1rem 0 4rem 0;
     }
 }
@@ -87,8 +87,8 @@
 .introduction__wrap{
     display: flex;
     flex-direction: row;
-
 }
+
 .introduction__textBox{
     background: $bg-white;
     padding: 12rem 3rem;
@@ -134,6 +134,26 @@
 .introduction__imgWrap{
     height: 100%;
     width: 100%;
+}
+
+@media screen and (max-width:991px){
+    .introduction{
+        padding: 1rem 0;
+    }
+    .introduction__wrap{
+        flex-direction: column;
+    }
+    .introduction__textBox{
+        width: 100%;
+        padding: 4rem 2rem;
+    }
+    .introduction__imgBox{
+        width: 100%;
+    }
+    .introduction__imgWrap{
+        height: 260px;
+        width: 100%;
+    }
 }
 
 /* ========================================================================== */
@@ -273,6 +293,12 @@
 .references__btn{
     text-align: center;
     margin-top: 0rem;
+}
+
+@media screen and (max-width:991px){
+    .references .references__col:last-child{
+        display: none;
+    }
 }
 
 /* ========================================================================== */

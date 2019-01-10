@@ -17,13 +17,12 @@
 
 @media screen and (max-width: 768px){
     #cookie-bar.fixed.bottom {
-        bottom: 60px;
-        width: 320px;
-        max-width: 90%;
+        bottom: 0px;
+        width: 100%;
         left: auto;
         right: 0px; 
         top: auto;
-        border-radius: $border-radius-primary;
+        border-radius: 0;
     }
     #cookie-bar .cb-enable {
         background: $brand-primary;

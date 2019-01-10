@@ -129,6 +129,19 @@ footer{
     margin-top: 10rem;
 }
 
+@media screen and (max-width:991px){
+    .col-xl-1{
+        height: 6rem;
+    }
+    .col-xl-5{
+        text-align: center;
+    }
+    .footer__img{
+        margin: 30px auto 0 auto;
+    }
+}
+
+
 /* ========================================================================== */
 /* FOOTER SCROLL TOP */
 /* ========================================================================== */

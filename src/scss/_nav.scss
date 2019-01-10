@@ -43,7 +43,7 @@
     font-weight: 500;
 
     &:hover, &:active, &:focus{
-        color: $white;
+        color: $brand-primary;
     }
 }
 .navbar-nav__icon{
@@ -117,7 +117,7 @@
 
         &::before{
             content: "";
-            background: $bg-white;
+            background: $brand-primary;
             display: block;
             height: 2px;
             width: 0;
@@ -145,6 +145,9 @@
 @media screen and (min-width:1250px){
     .navbar-nav .navbar-nav__item{
         padding: 1.3rem 3rem;
+    }
+    .navbar-nav{
+        flex-basis: 0;   
     }
 }
 
@@ -208,7 +211,7 @@
         @include align-items(center);
 
         &:hover, &:focus, &:active{
-            color: $text-white;
+            color: $brand-primary;
         }
     }
     .caret-icon.white {
@@ -357,10 +360,10 @@
             top: 0px;
         }
         .navbar-nav__link{
-            color: $text-white;
+            color: $brand-primary;
         
             &:hover, &:active, &:focus{
-                color: $text-white;
+                color: $brand-primary;
             }
         }
     }  
