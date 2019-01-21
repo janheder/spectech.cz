@@ -8,16 +8,16 @@ footer
                     form(action="" method="")
                         .form-group
                             label.footer-main__label(for="form_name") Jméno a příjmení
-                            input.form-control.footer-main__input(type="text" id="form_name" aria-describedby="name")
+                            input.form-control.footer-main__input(type="text" id="form_name" aria-describedby="name" required)
                         .form-group
                             label.footer-main__label(for="form_mail") Email
-                            input.form-control.footer-main__input(type="email" id="form_mail" aria-describedby="email")
+                            input.form-control.footer-main__input(type="email" id="form_mail" aria-describedby="email" required)
                         .form-group
                             label.footer-main__label(for="form_text") Text zprávy
-                            textarea.form-control(id="form_text" aria-describedby="text" rows="5")
+                            textarea.form-control(id="form_text" aria-describedby="text" rows="5" required)
                         .form-group
                             label.footer-main__label(for="form_spam") Kontrolní otázka (tři + dva)
-                            input.form-control.footer-main__input(type="number" id="form_spam" aria-describedby="antispam")
+                            input.form-control.footer-main__input(type="number" id="form_spam" aria-describedby="antispam" required)
 
                         p.footer-main__form-text Odesláním formuláře souhlasíte s #[a(href="#") podmínkami ochrany osobních údajů]
 
